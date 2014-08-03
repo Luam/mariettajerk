@@ -1,0 +1,92 @@
+<!doctype html>  
+<html>   
+<head>     
+	<meta charset="UTF-8">
+	<meta class="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Merietta Jerk</title>
+
+	<!-- link to the CSS files -->
+	<link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="assets/css/glyphs.css" rel="stylesheet" type="text/css" media="screen">
+
+	<!-- link to the JS files -->
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="assets/js/application.js"></script>
+
+</head>
+
+<body>
+	
+	<div class="container" >
+	  	
+		<header>
+			<img src="assets/images/logo.jpg" class="logo">
+			<ul id="top-nav">
+				<li ><a href="index.html">Home</a></li>
+				<li ><a href="menu.html">Menu</a></li>
+				<li ><a href="contact.html">Contact</a></li>
+			</ul>
+		</header>   
+
+		<div class="hero container-fluid">
+
+			<div id="slideshow">
+			   <div>
+			    <img src="assets/images/patties.JPG">
+			   </div>
+			   <div>
+			    <img src="assets/images/jerk_chicken.JPG">
+			   </div>
+			   <div>
+			    <img src="assets/images/storefront.jpg">
+			   </div>
+			</div>
+		</div>
+
+		<main>
+			<div class="col-12">
+				<h2>A Little About Us</h2>
+				<img src="assets/images/food.jpg" class="content_pic">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer-links ">
+				<a href="https://www.facebook.com/pages/Marietta-Jerk-Restaurant/115554978555045"><span class="icon-facebook2"></span></a>
+				<a href="https://plus.google.com/100554729183253569054/about"><span class="icon-googleplus2"></span></a>
+				<a href=""><span class="icon-twitter2"></span></a>
+				<a href="https://www.google.com/maps/place/Marietta+Jerk+Restaurant/@33.933396,-84.559414,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x1eff2971919a4e0f"><span class="icon-location"></span></a>
+				<a href="mailto:luam13@gmail.com@gmail.com"><span class="icon-mail"></span></a>
+			</div>
+			<div class="form_address">
+			<div class="address" id="address">
+				<address><strong>Marietta Jerk Restaurant</strong><br></address>
+				<address><span class="icon-phone">&nbsp;</span> (678) 797-5470 <br></address>
+			</div>
+
+		</div>
+		</footer>
+	
+<script>
+	
+	jQuery(document).ready(function(){
+		new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), {
+			type : 'cover'
+		} );
+
+		jQuery('#top-nav').superfish();
+	});
+
+</script>
+
+</body>
+</html>

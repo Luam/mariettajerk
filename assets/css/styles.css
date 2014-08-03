@@ -1,0 +1,1089 @@
+/*--------------------------------------------------------------------------------------------------------------*/
+/*	00.	CSS Reset
+/*--------------------------------------------------------------------------------------------------------------*/
+   
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, 
+small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, 
+canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, 
+ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;  
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+img { vertical-align: top; } /* Removes the space below an image in a div */
+
+a img { border:none; } /* Removes image link border in IE */
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+strong { font-weight: bold; font-size: 24px;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*	01.	GLOBAL
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.container { 
+	width: 100%;
+    border-style: solid;
+    border-width: 5px 0 0 0;
+    border-color: #f19317;
+}
+
+.container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*	02.	GRID
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.col-02, .col-03, .col-04, .col-05, .col-06, .col-07, .col-08, .col-09, .col-10, .col-11, .col-12 { 
+	margin: 0 20px; 
+	float: left;
+}
+
+.col-02 { width: 160px; }
+.col-03 { width: 260px; }
+.col-04 { width: 360px; }
+.col-05 { width: 460px; }
+.col-06 { width: 560px; }
+.col-07 { width: 660px; }
+.col-08 { width: 760px; }
+.col-09 { width: 860px; }
+.col-10 { width: 960px; }
+.col-11 { width: 1060px; }
+.col-12 { width: 1160px; }
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*	03.	HEADER / NAV
+/*--------------------------------------------------------------------------------------------------------------*/
+
+header { 
+	background-color: #fff;
+	padding: 20px 60px 25px 60px;	
+	position: relative;
+
+}
+
+header ul { 
+	float: right;
+}
+
+
+header a{
+	text-decoration: none;	
+}
+header hr{
+	background-color: #f5f5f5;
+}
+.arrow-down {
+	position: relative;
+	top: 15px;
+	left: 10px; 
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #000;
+}
+.fadein img{
+	max-width: 100% !important;
+	height: auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+}
+header .mobile-menu{
+	position: absolute !important;
+	top: 45px !important;
+	right: 20px !important;
+}  
+.logo{
+	width: 98px;
+}
+#top-nav{
+	margin-top: 25px;
+}
+#top-nav li{
+	display: inline;
+	font-family: "proxima-nova", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	color: #444;
+	margin: 22px 20px 0 20px;
+	vertical-align: super;
+}
+#top-nav li a{
+	font-family: "proxima-nova", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	color: #444;
+	vertical-align: super;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+/*	03.	HERO
+/*--------------------------------------------------------------------------------------------------------------*/
+
+
+#slideshow { 
+    position: relative; 
+    height: 480px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+#slideshow img{
+	width: 100%;
+	height: 480px;
+}
+#slideshow > div { 
+ 	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	right: 0px; 
+	bottom: 0px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*	04.	MAIN / CONTENT
+/*--------------------------------------------------------------------------------------------------------------*/
+
+main { 
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40px 0 100px 0;
+	position: relative;
+}
+
+main:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+main h2 { 
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 100;
+	font-size: 48px;
+	margin: 0 0 35px -4px;
+}
+
+main img { 
+	margin-right: 40px;
+	float: left; 
+}
+
+main p { 
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 300;
+	font-size: 19px;
+	line-height: 35px;
+	color: #969696;
+	width: 770px;
+	margin: -8px 40px 0 0;
+	float: left;
+}
+
+
+.content_pic{
+	border: 3px solid #fff; 
+	box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+	width: 300px;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+/*	04.	FOOTER
+/*--------------------------------------------------------------------------------------------------------------*/
+
+footer { 
+
+	background: url(../images/oliva.png) repeat;
+	padding: 20px 0 30px 0;
+	height: 75px;
+	padding-top: 30px;
+	padding-left: 80px; 
+}
+
+footer div:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+footer .footer-links {
+	font-family: "proxima-nova", sans-serif;
+	width: 551px;
+	color: #969696;
+	font-size: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	border-right: 2px solid #999;
+
+}
+.footer-links span{
+	color: #999;
+	font-size: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	padding: 20px;
+}
+
+
+.footer-links a{
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+.footer-links span:hover{
+	color: #fff;	
+
+	-webkit-transform: rotate(360deg);
+ 	-moz-transform: rotate(360deg);
+ 	transform: rotate(360deg);
+  
+	/*Transition*/
+ 	-webkit-transition: transform .4s;
+ 	-moz-transition: transform .4s;
+ 	-o-transition: transform .4s;
+  	transition: transform .4s;
+}
+
+.form_address{
+	margin-top: 16px;
+	font-size: 22px;
+	width: 529px;
+	float: right;
+	color: #999;
+	font-family: "proxima-nova", sans-serif;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*	04.	FONT ICONS
+/*--------------------------------------------------------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?tczqqq');
+	src:url('fonts/icomoon.eot?#iefixtczqqq') format('embedded-opentype'),
+		url('fonts/icomoon.woff?tczqqq') format('woff'),
+		url('fonts/icomoon.ttf?tczqqq') format('truetype'),
+		url('fonts/icomoon.svg?tczqqq#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-white { color: #FFF; }
+
+.icon-uni6F:before {
+	content: "\6f";
+}
+.icon-uni63:before {
+	content: "\63";
+}
+.icon-uni74:before {
+	content: "\74";
+}
+.icon-uni75:before {
+	content: "\75";
+}
+.icon-uni62:before {
+	content: "\62";
+}
+.icon-uni6C:before {
+	content: "\6c";
+}
+.icon-uni6D:before {
+	content: "\6d";
+}
+.icon-uni72:before {
+	content: "\72";
+	font-size: 16px;
+	margin: 52px 0 0 8px;
+	float: left;
+}
+.icon-uni73:before {
+	content: "\73";
+}
+.icon-arrow-left:before {
+	content: "\e600";
+}
+.icon-arrow-down:before {
+	content: "\e100";
+}
+.icon-arrow-up:before {
+	content: "\e602";
+}
+.icon-arrow-right:before {
+	content: "\e603";
+}
+.icon-arrow-left2:before {
+	content: "\e601";
+}
+.icon-arrow-down2:before {
+	content: "\e610";
+}
+.icon-arrow-up2:before {
+	content: "\e611";
+}
+.icon-arrow-right2:before {
+	content: "\e612";
+}
+.icon-arrow-left22:before {
+	content: "\e604";
+}
+.icon-arrow-down22:before {
+	content: "\e605";
+}
+.icon-arrow-up22:before {
+	content: "\e606";
+}
+.icon-arrow-right22:before {
+	content: "\e607";
+}
+.icon-arrow-left3:before {
+	content: "\e608";
+}
+.icon-arrow-down3:before {
+	content: "\e609";
+}
+.icon-arrow-up3:before {
+	content: "\e60a";
+}
+.icon-arrow-right3:before {
+	content: "\e60b";
+}
+.icon-arrow-left4:before {
+	content: "\e60c";
+}
+.icon-arrow-down4:before {
+	content: "\e60d";
+}
+.icon-arrow-up4:before {
+	content: "\e60e";
+}
+.icon-uniE60F:before {
+	content: "\e60f";
+}
+.icon-ellipsis:before {
+	content: "\e613";
+}
+
+
+
+
+#moodular {
+	overflow: hidden;
+}
+#moodular, #moodular li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	MENU
+/*-----------------------------------------------------------------------------------*/
+.menu-container ul{
+	margin: 50px; 
+}
+.menu-container{
+	/*background: url(../images/oliva.png) repeat;*/
+}
+.menu-items{
+	display: block;
+}
+.name{
+	font-family: "proxima-nova", sans-serif;
+	color: #444;
+	float: left;
+}
+.price{
+	font-family: "proxima-nova", sans-serif;
+	color: #444;
+	float: right;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	05.	MEDIA QUERIES (Standard Screens 1024x768)
+/*-----------------------------------------------------------------------------------*/
+
+/*@media (max-width:1220px) {
+
+	.col-02, .col-04, .col-05, .col-06, .col-07, .col-08, .col-09, .col-10, .col-11, .col-12 { 
+		margin: 0 10px; 
+		float: left;
+	}
+
+	.col-02 { width: 140px; }
+	.col-03 { width: 200px; }
+	.col-04 { width: 300px; }
+	.col-05 { width: 380px; }
+	.col-06 { width: 460px; }
+	.col-07 { width: 540px; }
+	.col-08 { width: 620px; }
+	.col-09 { width: 700px; }
+	.col-10 { width: 780px; }
+	.col-11 { width: 860px; }
+	.col-12 { width: 940px; }
+
+	header { 
+		width: 940px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 35px 20px 35px 20px;
+	}
+
+	.hero .content { 
+		width: 940px;
+		height: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 20px;
+	}
+	.hero-message{
+		width: 
+	}
+
+	main { 
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 40px 0 100px 0;
+	}
+
+	main h2 { 
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 100;
+		font-size: 42px;
+		margin: 0 0 35px -4px;
+	}
+
+	main img { 
+		width: 220px;
+		margin-right: 30px;
+		float: left; 
+	}
+
+	main p { 
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 17px;
+		line-height: 30px;
+		color: #969696;
+		width: 330px;
+		margin: -9px 40px 0 0;
+		float: left;
+	}
+
+	footer .footer-links {
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.footer-sub { 
+		width: 940px;
+		padding: 40px 20px 70px 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	05.	MEDIA QUERIES (Tablets)
+/*-----------------------------------------------------------------------------------*/
+
+/*@media (max-width:980px) {
+
+	.col-02, .col-04, .col-05, .col-06, .col-07, .col-08, .col-09, .col-10, .col-11, .col-12 { 
+		margin: 0 10px; 
+		float: left;
+	}
+
+	.col-04 { width: 700px; }
+	.col-08 { width: 700px; }
+
+	header { 
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 35px 20px 35px 20px;
+	}
+
+	header ul { display: none; }
+
+	.hero .content { 
+		width: 700px;
+		height: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 20px;
+	}
+
+	main { 
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 40px 0 100px 0;
+	}
+
+	main h2 { 
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 100;
+		font-size: 42px;
+		margin: 0 0 35px -4px;
+	}
+
+	main img { 
+		width: 220px;
+		margin-right: 30px;
+		float: left; 
+	}
+
+	main p { 
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 17px;
+		line-height: 30px;
+		color: #969696;
+		width: 450px;
+		margin: -9px 0 50px 0;
+		float: left;
+	}
+
+	main li:nth-child(odd) {
+		width: 90px;
+		float: left;
+	}
+
+	main li:nth-child(even) {
+		width: 610px;
+		float: left;
+	}
+
+	footer .footer-links {
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	footer .footer-links div:first-child { display: none;}
+
+	.footer-sub { 
+		width: 700px;
+		padding: 40px 20px 70px 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.footer-sub ul { margin-bottom: 30px;}
+
+	.footer-sub p { float: left;}
+
+}*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	05.	MEDIA QUERIES (Mobile)
+/*-----------------------------------------------------------------------------------*/
+
+/*@media (max-width:767px) {
+
+	.col-02, .col-04, .col-05, .col-06, .col-07, .col-08, .col-09, .col-10, .col-11, .col-12 { 
+		margin: 0; 
+		float: left;
+	}
+
+	.col-04 { width: 100%; }
+	.col-08 { width: 100%; }
+
+	header { 
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+	}
+
+	.logo {
+		width: 190px; 
+		padding: 35px 30px 35px 30px; 
+	}
+
+	.hero { 
+		background-color: gray;
+		background-repeat: no-repeat;
+		background-position: center; 
+
+	}
+
+	.hero .content { 
+		width: 100%;
+		height: 305px;
+		padding: 0;
+		color: blue;
+		position: relative;
+	}
+
+	.hero .hero-message { 
+		width: 100%;
+		background-color: #db2727;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.hero .hero-message  h1 { 
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 100;
+		font-size: 17px;
+		color: #FFF;
+		line-height: 25px;
+		margin: 30px;
+	}
+
+	.hero .hero-message p { margin: 0 0 30px 30px;}
+
+	.hero .hero-message .icon-uni72:before {
+		content: "\72";
+		font-size: 16px;
+		margin: 0 0 0 8px;
+		float: left;
+	}
+
+	main { 
+		width: 101%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 40px 0 50px 0;
+	}
+
+	main h2 { 
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 100;
+		font-size: 42px;
+		margin: 0 0 35px -4px;
+		padding: 0 30px 0 30px;
+	}
+
+	main img { display: none; }
+
+	main p { 
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 17px;
+		line-height: 30px;
+		color: #969696;
+		width: 85%;
+		padding-left: 30px;
+		margin: 0 0 50px 0;
+		float: left;
+	}
+
+	main ul { padding: 0 30px 0 30px; }
+
+	main li:nth-child(odd) { 
+		font-family: "proxima-nova", sans-serif;
+		font-size: 15px;
+		font-weight: 600;
+		width: 100%;
+		line-height: 24px;
+		float: left;
+	}
+
+	main li:nth-child(even) { 
+		font-family: "proxima-nova", sans-serif;
+		font-size: 15px;
+		font-weight: 300;
+		color: #db2727;
+		width: 100%;
+		line-height: 24px;
+		margin-bottom: 20px;
+		float: left;
+	}
+
+	footer { display: none !important; }
+
+	.footer-sub { 
+		width: 100%;
+		padding: 30px 0 30px 0;
+		background-color: #EEE;
+	}
+
+	.footer-sub ul { 
+		padding: 0 30px 0 30px; 
+		margin-bottom: 10px;
+		float: left;
+	}
+
+	.footer-sub li { 
+		padding: 0;
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+
+	.footer-sub p { 
+		font-size: 12px;
+		padding: 0 30px 0 30px;
+		float: left;
+	}
+
+
+}
+*/
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	06.	MEDIA QUERIES (in between si)
+/*-----------------------------------------------------------------------------------*/
+
+
+/*@media screen and (min-width: 981px){
+	.mobile-menu{
+		display: none;
+	}
+
+}
+*/
+/*@media (min-width: 981px) and (max-width: 1200px){
+
+	.hero .content { 
+		height: 368px;
+	}
+	.message-1{
+		width: 280px !important;
+		height: 180px;
+	}
+	.message-2{
+		width: 280px !important;
+		height: 180px;
+	}
+
+	.message-1 h1, .message-1 span{
+		font-size: 20px !important;
+
+	}
+	.message-1 p, .message-1 span, .icon-uni72:before{
+		margin-top: 21px !important;
+	
+	}
+	.message-2 h1, .message-2 span{
+		font-size: 20px !important;
+
+	}
+	.message-2 p, .message-2 span, .icon-uni72:before{
+		margin-top: 21px !important;
+	
+	}
+}*/
+
+/*@media (max-width:980px) {
+
+	.col-02, .col-04, .col-05, .col-06, .col-07, .col-08, .col-09, .col-10, .col-11, .col-12 { 
+		margin: 0 10px; 
+		float: left;
+	}
+
+	.col-04 { width: 700px; }
+	.col-08 { width: 700px; }
+
+
+
+
+	header { 
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 35px 20px 35px 20px;
+	}
+
+	header ul { display: none; }
+
+	.hero .content { 
+		width: 700px;
+		height: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 20px;
+	}
+
+
+	main { 
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 40px 0 100px 0;
+	}
+
+	main h2 { 
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 100;
+		font-size: 42px;
+		margin: 0 0 35px -4px;
+	}
+
+	main img { 
+		width: 220px;
+		margin-right: 30px;
+		float: left; 
+	}
+
+	main p { 
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 17px;
+		line-height: 30px;
+		color: #969696;
+		width: 450px;
+		margin: -9px 0 50px 0;
+		float: left;
+	}
+
+	main li:nth-child(odd) {
+		width: 90px;
+		float: left;
+	}
+
+	main li:nth-child(even) {
+		width: 610px;
+		float: left;
+	}
+	.message-1{
+		width: 250px !important;
+		height: 120px;
+	}
+	.message-1 h1, .message-1 p, .message-1 span{
+		font-size: 15px !important;
+		line-height: 1;
+	}
+	.message-1 p, .message-1 span, .icon-uni72:before{
+
+		margin-top: 15px !important;
+	}
+	.message-2{
+		width: 250px !important;
+		height: 120px;
+	}
+	.message-2 h1, .message-2 p, .message-2 span{
+		font-size: 14px !important;
+		line-height: 1;
+	}
+	.message-2 p, .message-2 span, .icon-uni72:before{
+		
+		margin-top: 15px !important;
+	}
+	footer .footer-links {
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	footer .footer-links div:first-child { display: none;}
+
+	.footer-sub { 
+		width: 700px;
+		padding: 40px 20px 70px 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.footer-sub ul { margin-bottom: 30px;}
+
+	.footer-sub p { float: left;}
+}
+*/
+
+/*@media screen and (max-width: 780px){
+	.container{
+		width: inherit;
+	}
+	#top-nav{
+		display: none;
+	}
+	header{
+		width: inherit;
+	}
+	header .mobile-menu{
+		position: absolute !important;
+		top: 45px !important;
+		right: 20px !important;
+	}  
+	.hero .content{
+		max-height: 247px; 
+	}
+	.hero-message h1, .hero-message p, .hero-message span{ 
+		padding: 0 !important;
+		margin: 0 !important;
+		font-size: 14px !important;
+		line-height: 2 !important;
+	}
+	.message-1{
+		width: 100%;
+		height: 100px;
+	}
+	.message-2{
+
+		height: 100px;
+	}
+
+	.message-1{
+		width: 250px !important;
+		height: 150px;
+	}
+	.message-1 h1, .message-1 p, .message-1 span{
+		font-size: 15px !important;
+		line-height: 1;
+	}
+	.message-1 p, .message-1 span, .icon-uni72:before{
+
+		margin-top: 25px !important;
+	}
+	.message-2{
+		width: 250px !important;
+		height: 150px;
+	}
+	.message-2 h1, .message-2 p, .message-2 span{
+		font-size: 14px !important;
+		line-height: 1;
+	}
+	.message-2 p, .message-2 span, .icon-uni72:before{
+		
+		margin-top: 25px !important;
+	}
+	main{
+		width: 768px;
+	}
+	.main-text h2{
+		font-size: 50px;
+	}
+	.main-text p {
+		width: 57.741935%;
+	}
+	.latest-news , .latest-news ul{
+		width: 740px;
+	}
+
+	main li:nth-child(odd) {
+		float: left;
+	}
+
+	main li:nth-child(even) {
+		max-width: 740px;
+		float: none;
+		white-space: nowrap;
+
+	}
+	.col-03{
+		width: 213px;
+	}
+	.col-04{
+		width: inherit;
+		float: none;
+	}
+	.col-08{
+		width: inherit;
+		float: none;
+	}
+	footer{
+		width: 101%;
+	}
+	.footer-links{
+		width: inherit !important;
+	}
+	.footer-sub ul, .footer-sub p {
+		width: 100%;
+		margin: 10px;
+		float: none;
+		
+	}
+	.footer-sub ul li{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.icon-uni72:before{
+		margin-top: 0;
+	}
+	
+}
+@media screen and (max-width: 420px){
+	.container{
+		width: 420px;
+	}
+	.hero-message {
+		display: none !important;
+	}
+	.hero .content { 
+		height: 130px;
+	}
+	main .fadein img{
+		display: none !important;
+	}
+	main h2{
+		font-size: 26px;
+	}
+}*/
+
+
+
+
+
